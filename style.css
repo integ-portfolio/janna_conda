@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    padding-top: 20px;
+    overflow-y: auto;
+    border-radius:  0 20px 20px 0;
+    z-index: 100;
+    transition: .5s;
+}
+
+.sidenav a {
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.sidenav a:hover {
+    background-color: #e9ecef;
+    color: #333;
+}
+
+.main {
+    margin-left: 250px;
+    padding: 20px;
+}
+.janna-pic{
+    width: 230px;
+    height: 230px;
+}
+.main-div .right{
+    margin-top: 7rem;
+}
+
+.bi-list{
+    position: absolute;
+    top: 1%;
+    right: 5%;
+    display: none;
+    cursor: pointer;
+}
+.bi-list:hover{
+    color: darkorange;
+}
+.sidenav-bg-dark{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: rgba(0,0,0,.5);
+    z-index: 99;
+    display: none;
+    transition: .5s;
+}
+header{
+    background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+}
+@media (max-width: 992px) {
+    .sidenav {
+        width: 200px;
+    }
+
+    .main {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidenav {
+        width: 70vw;
+        height: 100vh;
+        left: -100%;
+    }
+
+    .main {
+        margin-left: 0;
+    }
+    .main .main-div{
+        flex-direction: column;
+    }
+    .main-div .right{
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .bi-list{
+        display: block;
+    }
+    /* header h1{
+        font-size: 1rem;
+    } */
+    nav a span{
+        display: none;
+    }
+   
+}
